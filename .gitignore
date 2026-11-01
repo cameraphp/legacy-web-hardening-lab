@@ -1,0 +1,33 @@
+# LAB ONLY: generated, local-only or secret-like files must never be tracked (REQ-SAFE-003).
+
+# Sanitized run evidence written by scripts/lab.ps1 (disposable)
+artifacts/*
+!artifacts/README.md
+
+# Certificates, keys and secrets (the lab generates its certificate on container tmpfs only)
+*.key
+*.pem
+*.crt
+*.csr
+*.p12
+*.pfx
+.env
+.env.*
+
+# Fixture data and backups (these live only in Docker named volumes)
+*.sqlite
+*.sqlite-*
+*.db
+*.tar.gz
+*.partial
+
+# Runtime and logs
+.runtime/
+*.log
+logs/
+
+# Editor and OS noise
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

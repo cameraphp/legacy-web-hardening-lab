@@ -1,0 +1,1 @@
+LAB ONLY: synthetic static file. This directory has no index, so it demonstrates disabled directory listing.

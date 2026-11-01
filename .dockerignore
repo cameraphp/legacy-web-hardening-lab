@@ -1,0 +1,23 @@
+# LAB ONLY: each image builds from its own folder under docker/ (see docker-compose.yml).
+# This root-level file keeps docs, specs, evidence and any secret-like files out of a build
+# context if the project root is ever used as one.
+.git
+.gitignore
+artifacts/
+specs/
+scripts/
+tests/
+*.md
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+.env
+.env.*
+*.sqlite
+*.sqlite-*
+*.db
+*.tar.gz
+*.log
+.runtime/
